@@ -1,0 +1,775 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+/*font-family: 'Jost', sans-serif;
+font-family: 'Lora', serif;*/
+
+html {
+	font-size: 100%;
+	scroll-behavior: smooth;
+}
+* {
+	outline: none;
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+img {
+	outline: none;
+}
+body {
+	font-family: 'Jost', sans-serif;
+	font-size: 1em;
+	color: #222222;
+	overflow: auto;
+}
+p {
+	font-family: 'Lora', serif;
+	line-height: 30px;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Jost', sans-serif;
+}
+.container {
+	width: 1640px;
+	margin: 0 auto;
+}
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+.clear {
+	clear: both;
+}
+.tnc-title {
+	color: #1C54A9;
+	font-size: 2.75em;
+	font-weight: 700;
+	text-transform: uppercase;
+	display: inline-block;
+	line-height: 1;
+}
+.tnc-btn {
+	background: #C61E2D;
+	color: #fff;
+	padding: 10px 25px;
+	text-decoration: none;
+	position: relative;
+	overflow: hidden;
+	display: inline-block;
+	z-index: 1;
+	border: solid 1px #C61E2D;
+	font-family: 'Jost', sans-serif;
+}
+/*header*/
+header {
+	width: 100%;
+	justify-content: space-between;
+	padding: 0.8em 1em;
+	background: #222222;
+	align-items: center;
+}
+.logo img {
+	display: flex;
+}
+nav ul li {
+	display: inline-block;
+}
+nav ul li a {
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 0 10px;
+	display: inline-block;
+}
+nav ul li a:hover {
+	color: #c61e2d;
+}
+.header-btn .tnc-btn:last-child {
+	background: none;
+	border: solid 1px #fff;
+	margin-left: 10px;
+}
+.hamburger-btn, .hamburger-close, .footer-menu {
+	display: none;
+}
+.header-btn {
+	display: flex;
+}
+/*Banner*/
+.banner {
+	position: relative;
+}
+.hero-content {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 9;
+	color: #fff;
+	text-align: center;
+	width: 100%;
+}
+.hero-content h2 {
+	color: #FFF;
+	font-size: 5.25em;
+}
+.hero-content h3 {
+	font-size: 2.25em;
+	font-weight: normal;
+}
+/*tour-des-canadiens*/
+.tour-des-canadiens {
+	padding-top: 5em;
+}
+.tour-des-canadiens img {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	padding: 1em;
+}
+.canadiens-content {
+	flex: 0 1 calc((65% / 1) - 2rem);
+}
+.canadiens-content p {
+	line-height: 30px;
+}
+.canadiens-btn {
+	flex: 0 1 calc((35% / 1) - 2rem);
+	text-align: right;
+	margin-left: auto;
+}
+.canadiens-btn .tnc-btn, .amenities .tnc-btn {
+	padding: 17px 25px;
+	font-size: 1.125em;
+	font-weight: 500;
+}
+.canadiens {
+	margin: -1em;
+	margin-top: 2em;
+}
+.canadiens > div {
+	flex: 1 1 calc((100% / 2) - 2rem);
+}
+.canadiens ul {
+	flex-wrap: wrap;
+}
+.canadiens ul li {
+	flex: 1 1 calc((100% / 2) - 2rem);
+	display: inline-block;
+}
+.right-canadiens ul li {
+	display: inline-block;
+	flex: 1 1 calc((100% / 2) - 2rem);
+}
+/*amenities*/
+.amenities {
+	overflow: hidden;
+	padding: 4em 0;
+}
+.amenities .flex-container {
+	align-items: flex-start;
+	margin-bottom: 1.5em;
+}
+.amenities .tnc-title {
+	color: #000;
+	margin-bottom: 20px;
+}
+/*.amenities .owl-stage,
+.step-away .owl-stage { right: 64px; }*/
+.amenities span {
+	padding: 10px 0 4px 0;
+	display: inline-block;
+	width: 100%;
+	font-size: 1.25em;
+}
+.amenities h4 {
+	color: #1C54A9;
+	font-size: 1.5em;
+	font-weight: 600;
+}
+/*cta*/
+.cta {
+	background: url(../images/cta-bg.jpg);
+	padding: 4em 0;
+	text-align: center;
+	background-size: cover;
+	background-position: center;
+}
+.cta > div {
+	display: inline-block;
+	border: solid #fff;
+	padding: 20px;
+}
+.cta h3 {
+	font-size: 4.188em;
+	color: #FFF;
+	text-transform: uppercase;
+}
+.cta h2 {
+	color: #FFF;
+	font-size: 8.438em;
+	text-transform: uppercase;
+	line-height: 1;
+	display: inline-block;
+}
+/*testimonials*/
+.testimonials {
+	background: #2A384D;
+	padding: 7em 0;
+	text-align: center;
+	color: #fff;
+	position: relative;
+	z-index: 1;
+}
+.testimonials:before {
+	content: "";
+	background: url(../images/testimonials-pattarn.png);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: -1;
+}
+.testimonials .tnc-title {
+	color: #fff;
+}
+#testimonials {
+	width: 50%;
+	margin: 0 auto;
+}
+.testimonials p {
+	color: #fff;
+	line-height: 30px;
+	margin: 30px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.testimonials p:before {
+	content: "";
+	background: url(../images/testimonials-icon.png);
+	display: flex;
+	width: 46px;
+	height: 44px;
+	margin-bottom: 20px;
+}
+.owl-dots {
+	display: flex;
+	justify-content: center;
+}
+.owl-dot {
+	width: 12px;
+	height: 12px;
+	margin: 6px;
+	background: #000;
+	border-radius: 50%;
+	opacity: 0.3;
+	margin-top: 30px;
+}
+.owl-dot.active {
+	opacity: 1;
+}
+.testimonials .owl-dot {
+	background: #fff;
+	margin-top: 0px;
+}
+/*largest*/
+.largest {
+	padding: 5em 0;
+}
+.largest .flex-container {
+	align-items: center;
+}
+.largest-left {
+	flex: 1 1 calc((45% / 1) - 2rem);
+	padding-right: 1em;
+}
+.largest-left .tnc-title {
+	color: #000000;
+	font-size: 3.375em;
+}
+.largest-left p {
+	font-size: 1.5em;
+	padding: 10px 0;
+}
+.largest-left h3 {
+	color: #1C54A9;
+	font-size: 2.125em;
+	line-height: 1;
+}
+.largest-left .tnc-btn {
+	padding: 20px 30px;
+	font-size: 1.125em;
+	margin-top: 20px;
+	font-weight: bold;
+}
+.largest-right {
+	flex: 1 1 calc((55% / 1) - 2rem);
+}
+.largest-right video {
+	width: 100%;
+	height: 550px;
+}
+.largest-right img {
+	width: 100%;
+}
+/*step-away*/
+.step-away {
+	padding: 3em 0 5em 0;
+}
+.canadiens-content .tnc-title:after {
+	content: "";
+	background: #8A8A8A;
+	display: flex;
+	width: 39%;
+	height: 2px;
+	margin: 21px 0;
+}
+.step-away .flex-container {
+	align-items: flex-start;
+	margin-bottom: 2.5em;
+}
+.amenities .tnc-title:after {
+	display: none;
+}
+.step-away h4 {
+	margin: 20px 0 5px 0;
+}
+.step-away ul {
+	display: flex;
+	align-items: center;
+}
+.step-away ul li {
+	display: inline-block;
+	line-height: 1;
+	display: flex;
+	align-items: center;
+}
+.step-away ul li:first-child {
+	border-right: solid 1px #b5b5b5;
+	padding-right: 10px;
+	margin-right: 10px;
+	position: relative;
+}
+.step-away ul li:first-child:before {
+	content: "";
+	background: url(../images/men-con.png);
+	margin-right: 5px;
+	width: 13px;
+	height: 23px;
+	display: inline-block;
+}
+/*footer*/
+
+footer {
+	background: #ECEDF8;
+	padding: 3em 0em;
+}
+footer .flex-container {
+	display: flex;
+	flex-wrap: inherit;
+}
+.footer-grid {
+	flex: 1 1 calc((100% / 4) - 5em);
+	margin: 2.5em;
+}
+.footer-grid h3 {
+	font-size: 26px;
+	color: #1C54A9;
+	margin-bottom: 8px;
+}
+.footer-grid p {
+	color: #222222;
+	margin-top: 10px;
+	line-height: 28px;
+}
+.footer-grid:nth-child(3) {
+	flex: 1 1 calc((20% / 1) - 5em);
+}
+.footer-grid:last-child {
+	flex: 1 1 calc((35% / 1) - 5em);
+}
+.footer-grid:last-child ul {
+	column-count: 2;
+}
+.footer-grid ul li {
+	display: inline-block;
+	width: 100%;
+	color: #222222;
+	padding: 6px 0;
+	font-family: Lora;
+}
+.footer-grid ul li a {
+	color: #222222;
+	text-decoration: none;
+	position: relative;
+	padding-left: 20px;
+}
+.footer-grid ul li a:before {
+	content: "";
+	background: #c61e2d;
+	position: absolute;
+	left: 0;
+	top: 6px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+}
+.footer-grid ul li a:hover {
+	color: #c61e2d;
+}
+/*owl*/
+.owl-nav {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 94%;
+	display: flex;
+	justify-content: space-between;
+}
+.owl-prev, .owl-next {
+	background: #fff;
+	display: flex;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+}
+.arrow-left, .arrow-right {
+	width: 14px;
+	height: 14px;
+	border: solid #000;
+	display: inline-block;
+	transform: rotate(45deg);
+	border-width: 0px 0px 2px 2px;
+	margin-left: 7px;
+}
+.arrow-right {
+	border-width: 2px 2px 0 0;
+	margin-right: 7px;
+	margin-left: 0;
+}
+.owl-nav .disabled {
+	opacity: 0.5;
+}
+/*Dinning*/
+.inner-banner {
+	position: relative;
+}
+.inner-banner img {
+	width: 100%;
+	display: flex;
+}
+.inner-hero-content {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 9;
+	color: #fff;
+	text-align: center;
+	width: 40%;
+}
+.inner-hero-content h2 {
+	color: #FFF;
+	font-size: 2.75em;
+	font-weight: 600;
+}
+.inner-hero-content h3 {
+	font-size: 1.125em;
+	font-weight: normal;
+}
+.breadcrumbs {
+	background: #C2C2C2;
+	padding: 10px 0;
+}
+.breadcrumbs ul li {
+	display: inline-block;
+	color: #fff;
+	margin-right: 10px;
+	padding-right: 10px;
+}
+.breadcrumbs ul li a {
+	color: #fff;
+	text-decoration: none;
+}
+.inner-title h2 {
+	color: #1C54A9;
+	text-transform: uppercase;
+	font-size: 1.875em;
+	font-weight: normal;
+	margin-bottom: 25px;
+	display: inline-block;
+	line-height: 1;
+}
+/*discover*/
+.discover {
+	padding-top: 4em;
+}
+.discover .flex-container {
+	flex-wrap: wrap;
+	margin: -1em;
+}
+.discover-grid {
+	flex: 0 1 calc((100% / 3) - 2em);
+	margin: 1em
+}
+.discover-grid img {
+	width: 100%;
+	display: flex;
+}
+.discover-grid h4 {
+	margin-top: 20px;
+	color: #1C54A9;
+	font-size: 1.5em;
+	font-weight: 600;
+	line-height: 1;
+}
+.discover-grid span, .bar-description span {
+	margin: 15px 0;
+	color: #6F6F6F;
+	display: inline-block;
+	font-size: 1.125em;
+	line-height: 1.1;
+	position: relative;
+	padding-left: 22px;
+}
+.discover-grid span:before, .bar-description span:before {
+	content: "";
+	background: url(../images/map-pin-black.png);
+	margin-right: 5px;
+	width: 17px;
+	height: 22px;
+	display: inline-block;
+	background-repeat: no-repeat;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.discover-grid ul, .bar-description ul {
+	display: flex;
+	align-items: center;
+}
+.discover-grid ul li, .bar-description ul li {
+	display: inline-block;
+	line-height: 1;
+	display: flex;
+	align-items: center;
+}
+.discover-grid ul li:first-child, .bar-description ul li:first-child {
+	border-right: solid 1px #b5b5b5;
+	padding-right: 10px;
+	margin-right: 10px;
+	position: relative;
+}
+.discover-grid ul li:first-child:before, .bar-description ul li:first-child:before {
+	content: "";
+	background: url(../images/men-con.png);
+	margin-right: 5px;
+	width: 13px;
+	height: 23px;
+	display: inline-block;
+}
+/*neighbourhood*/
+.neighbourhood {
+	padding: 4em 0;
+	position: relative;
+}
+.neighbourhood:before {
+	content: "";
+	background: url(../images/map.png);
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 25%;
+	z-index: -1;
+}
+.neighbourhood.inner-title h2 {
+	text-align: left;
+	font-size: 2.75em;
+}
+.neighbourhood .discover-grid {
+	padding: 1%;
+	width: 49%;
+	display: inline-block;
+	margin: 0;
+	position: relative;
+}
+.neighbourhood .discover-grid p {
+	padding-top: 20px;
+}
+.neighbourhood-content p {
+	text-align: center;
+	width: 70%;
+	margin: 0 auto;
+	padding-bottom: 3em;
+	font-size: 1.25em;
+	line-height: 2em;
+}
+.neighbourhood.transportation.inner-title {
+	padding-top: 0;
+}
+.transportation:before {
+    display: none;
+}
+.neighbourhood.transportation .discover-grid {
+	width: 33%;
+}
+.transportation .discover-grid h4 {
+	color: #717377;
+	font-size: 1.25em;
+	text-transform: uppercase;
+}
+.transportation .discover-grid p {
+	padding-top: 10px;
+}
+a.neighbourhood-link {
+	background: rgb(255 255 255 / 80%);
+	width: 50px !important;
+	height: 50px !important;
+	display: flex;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	align-items: center;
+	justify-content: center;
+	padding: 14px;
+}
+/*housing*/
+.discover.housing {
+	padding: 4em 0;
+}
+.neighbourhood-content {
+	text-align: center;
+}
+.housing .inner-title h2, .nearby-colleges .inner-title h2 {
+	font-weight: 600;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+}
+.nearby-colleges {
+	background: #F1F1F1;
+	padding: 4em 0;
+}
+.nearby-colleges .discover-grid {
+	flex: 0 1 calc((100% / 4) - 2em);
+}
+.nearby-renting .discover-grid {
+	width: 31.3%;
+}
+.nearby-renting .discover-grid ul li:first-child:before {
+	display: none;
+}
+.nearby-renting .discover-grid ul li {
+	border: none;
+	padding-right: 6px;
+	margin-right: 6px;
+}
+.nearby-renting .discover-grid ul li:before {
+	content: "";
+	width: 8px;
+	height: 8px;
+	border-right: none !important;
+	background: #BDBDBE;
+	margin-right: 5px;
+	border-radius: 50%;
+}
+.discover .inner-title h2, .amenities.inner-title h2 {
+    text-align: center;
+    width: 100%;
+}
+/*old-montreal*/
+.old-montreal-min {
+	padding: 5em 0;
+	text-align: center;
+	background: #ECEDF8;
+}
+.old-montreal-min h2 {
+	text-transform: math-auto;
+	padding: 30px 0 20px 0;
+}
+.old-montreal-min p {
+    width: 60%;
+    margin: 0 auto 30px auto;
+    text-align: center;
+}
+.old-montreal p {
+	width: 80%;
+	margin: 0 auto;
+}
+.old-montreal-min .owl-nav {
+	width: 54%;
+}
+.restaurants-min .discover-grid {
+	margin: 1em 0;
+}
+.restaurants-min.tour-des-canadiens img {
+	padding: 0;
+}
+.restaurants-min.inner-title h2, .health.inner-title h2, .bars.inner-title h2 {
+	text-align: left;
+	font-size: 2.75em;
+	display: inline-block;
+	margin: 0;
+}
+.restaurants-min.inner-title h2:after, .bars.inner-title h2:after {
+	content: "";
+	background: #8A8A8A;
+	display: flex;
+	width: 150px;
+	height: 2px;
+	margin: 21px 0;
+}
+.bars {
+    padding: 4em 0;
+    background: #ECEDF8;
+    margin-top: 4em;
+}
+
+.bars .canadiens > div, .bars .canadiens ul li {
+	position: relative;
+}
+.bar-description {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    color: #fff;
+    width: 80%;
+}
+.bar-description h4 {
+	font-weight: 600;
+	font-size: 1.5em;
+}
+.bar-description ul li {
+	flex: none;
+}
+.bar-description ul li:first-child:before {
+	content: "";
+	background: url(../images/men-con-white.png);
+	margin-right: 5px;
+	width: 13px;
+	height: 23px;
+	display: inline-block;
+}
+.bar-description span {
+	color: #fff;
+	margin: 10px 0;
+}
+.bar-description span:before {
+	background: url(../images/map-pin.png);
+}
+.health {
+    background: no-repeat;
+    margin: 0;
+}
+.discover-grid .owl-nav {
+    top: 50%;
+}
+.owl-nav {
+    top: 35%;
+    width: 74%;
+}

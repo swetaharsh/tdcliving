@@ -1,0 +1,474 @@
+@media (min-width: 1366px) and (max-width: 1700px) {
+html {
+	font-size: 85%;
+}
+.container {
+	width: 90%;
+}
+.logo img {
+	display: flex;
+	width: 160px;
+}
+nav ul li a {
+	padding: 0 6px;
+}
+.amenities .owl-stage, .step-away .owl-stage {
+	right: 0;
+}
+.nearby-renting .discover-grid {
+	width: 30.3%;
+}
+}
+ @media (min-width: 1024px) and (max-width: 1365px) {
+html {
+	font-size: 85%;
+}
+.container {
+	width: 90%;
+}
+.logo img {
+	width: 180px;
+}
+.hero-content h2 {
+	font-size: 4em;
+}
+header {
+	flex-wrap: wrap;
+}
+nav {
+	order: 3;
+	flex: 1 1 calc((100% / 1) - 1em);
+	padding-top: 20px;
+	padding-bottom: 6px;
+}
+.footer-grid {
+	margin: 1em;
+}
+.footer-grid img {
+	width: 160px;
+}
+.footer-grid p {
+	line-height: 22px;
+}
+.amenities .owl-stage, .step-away .owl-stage {
+	right: 0;
+}
+.cta h3 {
+	font-size: 2.7em;
+}
+.cta h2 {
+	font-size: 5.438em;
+}
+.nearby-renting .discover-grid {
+	width: 30.3%;
+}
+.inner-banner img {
+	height: 280px;
+	object-fit: cover;
+}
+.neighbourhood.inner-title h2 {
+	margin-bottom: 14px;
+	font-size: 1.75em;
+}
+.owl-prev, .owl-next {
+	width: 40px;
+	height: 40px;
+}
+.arrow-left, .arrow-right {
+	width: 10px;
+	height: 10px;
+}
+a.neighbourhood-link {
+	width: 40px !important;
+	height: 40px !important;
+	padding: 12px;
+}
+.neighbourhood.transportation .discover-grid {
+	width: 49%;
+}
+}
+ @media (min-width: 768px) and (max-width: 1023px) {
+html {
+	font-size: 85%;
+}
+.container {
+	width: 90%;
+}
+.logo img {
+	width: 170px;
+}
+.header-btn .tnc-btn:last-child {
+	margin: 0 13px;
+}
+.amenities .owl-stage, .step-away .owl-stage {
+	right: 0;
+}
+.footer-grid {
+	flex: 1 1 calc((100% / 2) - 5em) !important;
+	margin: 1em;
+}
+.flex-container {
+	flex-wrap: wrap;
+}
+.amenities .owl-carousel {
+	width: 90%;
+	margin: 0 auto;
+}
+.largest-left, .largest-right, .canadiens-content, .canadiens-btn {
+	flex: 1 1 calc((100% / 1) - 2rem);
+	text-align: left;
+}
+.largest-right {
+	margin-top: 3em;
+}
+.canadiens-btn .tnc-btn {
+	margin-top: 1em;
+}
+.amenities .tnc-btn {
+	margin-top: 0em;
+}
+.hero-content h2 {
+	font-size: 3.5em;
+}
+.hero-content h3 {
+	font-size: 2.5em;
+}
+.cta h3 {
+	font-size: 3.188em;
+}
+.cta h2 {
+	font-size: 5.438em;
+}
+.discover {
+	padding-top: 3em;
+}
+.tour-des-canadiens, .testimonials, .step-away, .largest, .old-montreal-min {
+	padding: 3em 0;
+}
+.discover-grid h4 {
+	margin-top: 13px;
+}
+.inner-hero-content {
+	width: 70%;
+}
+.inner-banner img {
+	height: 350px;
+	object-fit: cover;
+}
+.inner-hero-content h2 {
+	line-height: 1;
+	margin-bottom: 20px;
+}
+.housing .inner-title h2, .nearby-colleges .inner-title h2 {
+	margin-bottom: 20px;
+}
+.neighbourhood-content p {
+	width: 90%;
+}
+.nearby-colleges .discover-grid {
+	flex: 0 1 calc((100% / 2) - 2em);
+}
+.nearby-renting .discover-grid {
+	width: 46%;
+}
+.neighbourhood.inner-title h2 {
+	margin-bottom: 14px;
+	font-size: 1.75em;
+}
+.owl-prev, .owl-next {
+	width: 40px;
+	height: 40px;
+}
+.arrow-left, .arrow-right {
+	width: 10px;
+	height: 10px;
+}
+a.neighbourhood-link {
+	width: 40px !important;
+	height: 40px !important;
+	padding: 12px;
+}
+.neighbourhood.transportation .discover-grid {
+	width: 49%;
+}
+footer .flex-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+.tnc-title {
+	font-size: 2em;
+}
+.old-montreal p {
+	width: 90%;
+	line-height: 26px;
+}
+.old-montreal-min p {
+	width: 80%;
+	text-align: center;
+}
+.bars {
+	margin-top: 0;
+}
+.bars .canadiens > div {
+	flex: 1 1 calc((100% / 1) - 2rem);
+}
+.bar-description {
+	bottom: 30px;
+	left: 30px;
+}
+}
+ @media only screen and (max-width: 992px) {
+header {
+	justify-content: start;
+}
+.header-btn {
+	margin-left: auto;
+}
+.hamburger-btn, .hamburger-close {
+	display: flex;
+	width: 40px;
+	height: 40px;
+	background: #fff;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+}
+.hamburger-close {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.hamburger-btn img, .hamburger-close img {
+	width: 26px;
+}
+nav {
+	position: fixed;
+	left: -100%;
+	top: 0;
+	height: 100%;
+	background: #000;
+	z-index: 99;
+	padding-top: 3em;
+	width: 100%;
+	transition: 0.5s;
+}
+.open-menu nav {
+	left: 0;
+	transition: 0.5s;
+}
+nav ul li {
+	width: 100%;
+}
+nav ul li a {
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 12px 15px;
+	display: inline-block;
+	background: #333;
+	width: 100%;
+	margin: 1px 0;
+}
+nav ul li a:hover {
+	background: #C61E2D;
+	color: #fff;
+}
+}
+@media only screen and (max-width: 767px) {
+html {
+	font-size: 85%;
+}
+.container {
+	width: 90%;
+}
+.flex-container, footer .flex-container {
+	display: block;
+}
+header.flex-container {
+	display: flex;
+}
+.logo img {
+	display: flex;
+	width: 130px;
+}
+.tnc-btn, .canadiens-btn .tnc-btn, .largest-left .tnc-btn {
+	padding: 8px 10px;
+	height: 40px;
+}
+.header-btn .tnc-btn:last-child {
+	margin: 0 7px;
+}
+.banner .owl-carousel .owl-item img {
+	height: 280px;
+	object-fit: cover;
+}
+.hero-content h2 {
+	font-size: 2.5em;
+	line-height: 1;
+}
+.hero-content h3 {
+	font-size: 1.5em;
+}
+.canadiens ul {
+	display: flex;
+}
+.tour-des-canadiens img {
+	padding: 0.5em;
+}
+.amenities {
+	padding: 1em 0;
+}
+.tour-des-canadiens, .testimonials, .step-away, .largest, .discover.housing, .neighbourhood, .old-montreal-min {
+	padding: 3em 0;
+}
+.tnc-title {
+	font-size: 2em;
+}
+.step-away h4 {
+	font-size: 1.3em;
+}
+.amenities .owl-stage, .step-away .owl-stage {
+	right: 0;
+}
+.canadiens-btn {
+	text-align: left;
+	margin-top: 20px;
+}
+.amenities .owl-carousel {
+	width: 90%;
+	margin: 0 auto;
+}
+#testimonials {
+	width: 100%;
+	margin: 0 auto;
+}
+.largest-left p {
+	padding: 15px 0;
+}
+.largest-left h3 {
+	padding-top: 15px;
+}
+.largest-right {
+	margin-top: 30px;
+}
+.cta {
+	margin-top: 2em;
+}
+.cta h3 {
+	font-size: 2.188em;
+}
+.cta h2 {
+	font-size: 4.438em;
+}
+.footer-grid {
+	margin: 1em 0;
+}
+.footer-grid ul li {
+	font-size: 1.25em;
+}
+.footer-grid:last-child ul {
+	column-count: 1;
+}
+.footer-grid:nth-child(4), .footer-grid:nth-child(5) {
+	display: none;
+}
+.footer-menu {
+	display: block;
+	background: #b01a32;
+	padding: 10px 10px;
+	text-align: center;
+	color: #fff;
+	font-size: 20px;
+	border-radius: 30px;
+	margin-top: 20px;
+}
+.footer-grid.main {
+	display: block;
+}
+.inner-banner img {
+	height: 200px;
+	object-fit: cover;
+}
+.discover {
+	padding-top: 3em;
+}
+.discover .flex-container {
+	margin: 0;
+}
+.discover-grid {
+	margin: 0 0 2em 0;
+}
+.inner-hero-content h2 {
+	font-size: 1.7em;
+	line-height: 1.2;
+}
+.housing .inner-title h2, .nearby-colleges .inner-title h2 {
+	margin-bottom: 15px;
+}
+.inner-hero-content h3 {
+	width: 90%;
+	margin: 0 auto;
+}
+.neighbourhood-content p {
+	width: 100%;
+}
+.nearby-renting .discover-grid, {
+ width: 100%;
+}
+.neighbourhood.inner-title h2 {
+	margin-bottom: 14px;
+	font-size: 1.75em;
+}
+.neighbourhood.transportation .discover-grid, .neighbourhood .discover-grid {
+	width: 100%;
+	margin-bottom: 10px;
+}
+.owl-prev, .owl-next {
+	width: 40px;
+	height: 40px;
+}
+.arrow-left, .arrow-right {
+	width: 10px;
+	height: 10px;
+}
+a.neighbourhood-link {
+	width: 40px !important;
+	height: 40px !important;
+	padding: 12px;
+}
+.inner-hero-content {
+    width: 96%;
+}
+.old-montreal-min p {
+    width: 100%;
+}
+.bars {
+    margin-top: 0;
+}
+.restaurants-min .discover-grid {
+    margin: 1.5em;
+}
+.bar-description {
+    bottom: 25px;
+    left: 25px;
+}
+.canadiens ul li {
+    flex: 1 1 calc((100% / 1) - 2rem);
+}
+.canadiens .bar-description ul li {
+    flex: none;
+}
+.restaurants-min.inner-title h2, .health.inner-title h2, .bars.inner-title h2 {
+    font-size: 2em;
+}
+.restaurants-min.inner-title h2:after, .bars.inner-title h2:after {
+    margin: 12px 0;
+}
+.discover-grid span, .bar-description span {
+    line-height: 1.4;
+    padding-left: 22px;
+}
+.owl-dot {
+    margin-top: 10px;
+}
+}
