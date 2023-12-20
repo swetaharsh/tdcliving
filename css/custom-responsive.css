@@ -2,7 +2,7 @@
 html {
 	font-size: 85%;
 }
-.container {
+.container, .faq .container {
 	width: 90%;
 }
 .logo img {
@@ -23,7 +23,7 @@ nav ul li a {
 html {
 	font-size: 85%;
 }
-.container {
+.container, .faq .container {
 	width: 90%;
 }
 .logo img {
@@ -91,7 +91,7 @@ a.neighbourhood-link {
 html {
 	font-size: 85%;
 }
-.container {
+.container, .faq .container {
 	width: 90%;
 }
 .logo img {
@@ -216,6 +216,9 @@ footer .flex-container {
 	bottom: 30px;
 	left: 30px;
 }
+.discover-grid {
+	flex: 1 1 calc((100% / 2) - 3em) !important;
+}
 }
  @media only screen and (max-width: 992px) {
 header {
@@ -278,8 +281,11 @@ nav ul li a:hover {
 html {
 	font-size: 85%;
 }
-.container {
+.container, .faq .container {
 	width: 90%;
+}
+p {
+	line-height: 26px !important;
 }
 .flex-container, footer .flex-container {
 	display: block;
@@ -316,9 +322,9 @@ header.flex-container {
 	padding: 0.5em;
 }
 .amenities {
-	padding: 1em 0;
+	padding: 2em 0;
 }
-.tour-des-canadiens, .testimonials, .step-away, .largest, .discover.housing, .neighbourhood, .old-montreal-min {
+.tour-des-canadiens, .testimonials, .step-away, .largest, .discover.housing, .neighbourhood, .old-montreal-min, .more-places, .city-living {
 	padding: 3em 0;
 }
 .tnc-title {
@@ -381,6 +387,7 @@ header.flex-container {
 	font-size: 20px;
 	border-radius: 30px;
 	margin-top: 20px;
+	cursor: pointer;
 }
 .footer-grid.main {
 	display: block;
@@ -391,9 +398,6 @@ header.flex-container {
 }
 .discover {
 	padding-top: 3em;
-}
-.discover .flex-container {
-	margin: 0;
 }
 .discover-grid {
 	margin: 0 0 2em 0;
@@ -437,38 +441,76 @@ a.neighbourhood-link {
 	padding: 12px;
 }
 .inner-hero-content {
-    width: 96%;
+	width: 96%;
 }
 .old-montreal-min p {
-    width: 100%;
+	width: 100%;
 }
 .bars {
-    margin-top: 0;
+	margin-top: 0;
 }
 .restaurants-min .discover-grid {
-    margin: 1.5em;
+	margin: 1.5em;
 }
 .bar-description {
-    bottom: 25px;
-    left: 25px;
+	bottom: 25px;
+	left: 25px;
 }
 .canadiens ul li {
-    flex: 1 1 calc((100% / 1) - 2rem);
+	flex: 1 1 calc((100% / 1) - 2rem);
 }
 .canadiens .bar-description ul li {
-    flex: none;
+	flex: none;
 }
 .restaurants-min.inner-title h2, .health.inner-title h2, .bars.inner-title h2 {
-    font-size: 2em;
+	font-size: 2em;
 }
 .restaurants-min.inner-title h2:after, .bars.inner-title h2:after {
-    margin: 12px 0;
+	margin: 12px 0;
 }
 .discover-grid span, .bar-description span {
-    line-height: 1.4;
-    padding-left: 22px;
+	line-height: 1.4;
+	padding-left: 22px;
 }
 .owl-dot {
-    margin-top: 10px;
+	margin-top: 10px;
+}
+.more-places.inner-title h2 {
+	font-size: 2em;
+}
+.city-living p {
+	width: 100%;
+}
+.inner-title h2 {
+	font-size: 1.5em !important;
+	margin-bottom: 20px;
+	line-height: 26px;
+}
+.metro-content {
+	padding: 2em 0em;
+}
+.exo-train {
+	padding: 3em 0;
+	margin: 1em 0;
+}
+.owl-dots {
+	margin-top: 20px;
+}
+.train-grid {
+	margin: 20px 0;
+}
+.owl-nav {
+	width: 88%;
+}
+.old-montreal-min .owl-nav {
+    width: 90%;
+    top: 26%;
+}
+.discover-grid img {
+    margin-bottom: 10px;
+}
+.discover-grid h4 {
+
+    line-height: 26px;
 }
 }
