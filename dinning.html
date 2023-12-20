@@ -11,27 +11,16 @@
 <link href="css/tnc-custom.css" rel="stylesheet" type='text/css'>
 <link href="css/custom-responsive.css" rel="stylesheet" type='text/css'>
 <link href="css/owl.carousel.min.css" rel="stylesheet" type='text/css'>
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script>  
+$(function(){ 
+  $("#header").load("header.html");  
+  $("#footer").load("footer.html");  
+}); 
+</script>
 </head>
 <body>
-<header class="flex-container">
-  <div class="logo"><img src="images/logo.png"  alt=""></div>
-  <nav>
-    <ul>
-      <li><a href="#">STUDENT HOUSING</a></li>
-      <li><a href="#">Executive Rentals</a></li>
-      <li><a href="#">AMENITIES</a></li>
-      <li><a href="#">SHOPPING</a></li>
-      <li><a href="#">DINNING</a></li>
-      <li><a href="#">OLD MONTREAL</a></li>
-      <li><a href="#">ENTERTAINMENT</a></li>
-      <li><a href="#">Transit</a></li>
-      <li><a href="#">TICKETS</a></li>
-    </ul>
-    <div class="hamburger-close"><img src="images/close.svg" ></div>
-  </nav>
-  <div class="header-btn"> <a href="#" class="tnc-btn">Book My Stay!</a> <a href="#" class="tnc-btn">Login</a> </div>
-  <div class="hamburger-btn"><img src="images/hamburger.svg" ></div>
-</header>
+<div id="header"></div>
 <section class="inner-banner"> <img src="images/Dinning-banner.jpg">
   <div class="inner-hero-content">
     <h2>Dinning</h2>
@@ -137,47 +126,7 @@
     </div>
   </div>
 </section>
-<footer>
-  <div class="container flex-container">
-    <div class="footer-grid"><img src="images/footer-logo.png"  alt="">
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-    </div>
-    <div class="footer-grid">
-      <h3>Contact Info</h3>
-      <ul>
-        <li>1909 Avenue De
-          scanadiens-De-Montréal,
-          Montreal, Quebec H4b 5g0,
-          Canada</li>
-        <li>514-667-0716</li>
-        <li>tdcliving.ca</li>
-      </ul>
-    </div>
-    <div class="footer-menu">Quick Links</div>
-    <div class="footer-grid">
-      <h3>Properties</h3>
-      <ul>
-        <li><a href="#">Explore Condos</a></li>
-        <li><a href="#">Tour des Can adiens 2</a></li>
-        <li><a href="#">Tour des Canadiens 3</a></li>
-        <li><a href="#">Near by properties</a></li>
-        <li><a href="#">Parking</a></li>
-        <li><a href="#">Lockers</a></li>
-      </ul>
-    </div>
-    <div class="footer-grid">
-      <h3>Quick Links</h3>
-      <ul>
-        <li><a href="#">Explore Condos</a></li>
-        <li><a href="#">Tour des Can adiens 2</a></li>
-        <li><a href="#">Tour des Canadiens 3</a></li>
-        <li><a href="#">Near by properties</a></li>
-        <li><a href="#">Parking</a></li>
-        <li><a href="#">Lockers</a></li>
-      </ul>
-    </div>
-  </div>
-</footer>
+<div id="footer"></div> 
 <script type="application/javascript" src="js/jquery.min.js"></script> 
 <script type="application/javascript" src="js/owl.carousel.min.js"></script> 
 <script type="application/javascript" src="js/tnc-custom.js"></script>
