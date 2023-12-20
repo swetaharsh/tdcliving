@@ -14,7 +14,45 @@ jQuery('#hero-slider').owlCarousel({
     items:5,
     loop:false,
 		dots:false,
-    margin:20,
+    margin:30,
+	 stagePadding: 132,
+	 nav:true,
+	navText : ["<i class='arrow-left'></i>","<i class='arrow-right'></i>"] ,
+	mouseDrag : false,
+	 responsive: {
+    0: {
+      items: 1,
+			stagePadding: 0,
+    },
+
+    600: {
+      items: 2,
+			stagePadding: 40,
+    },
+
+    1024: {
+      items: 3,
+			stagePadding: 52,
+    },
+
+    1366: {
+      items: 4,
+	  stagePadding: 72,
+    },
+	    1600: {
+      items: 4
+    }
+  }
+   
+});
+
+<!--amenities-slider-->
+    jQuery('.amenities-slider').owlCarousel({
+    center: false,
+    items:4,
+    loop:false,
+		dots:false,
+    margin:30,
 	 stagePadding: 132,
 	 nav:true,
 	navText : ["<i class='arrow-left'></i>","<i class='arrow-right'></i>"] ,
@@ -39,15 +77,16 @@ jQuery('#hero-slider').owlCarousel({
     },
 
     1366: {
-      items: 4,
+      items: 3,
 	  stagePadding: 72,
     },
 	    1600: {
-      items: 4
+      items: 3
     }
   }
    
 });
+
 <!--step-away-->
    jQuery('#testimonials').owlCarousel({
     items:1,
@@ -61,7 +100,7 @@ jQuery('#hero-slider').owlCarousel({
     center: false,
     items:5,
     loop:false,
-    margin:20,
+    margin:30,
 		dots:false,
 	 stagePadding: 132,
 	 responsive: {
@@ -99,7 +138,7 @@ jQuery('#hero-slider').owlCarousel({
     center: false,
     items:2,
     loop:false,
-    margin:20,
+    margin:30,
 		dots:false,
 	 stagePadding: 400,
 	  mouseDrag : false,
@@ -109,19 +148,15 @@ jQuery('#hero-slider').owlCarousel({
     0: {
       items: 1,
 			stagePadding: 0,
-			dots:true,
-			 nav:false,
     },
 
     600: {
       items: 1,
-			dots:true,
 			stagePadding: 102,
     },
 
     1024: {
       items: 1,
-			dots:true,
 			stagePadding: 152,
     },
 
@@ -155,7 +190,16 @@ jQuery('#hero-slider').owlCarousel({
   });
 	
 jQuery(".footer-menu").click(function(){
-jQuery(".footer-grid").toggleClass("main");
+jQuery(".footer-grid").toggleClass("main");});
+	
+	
+	  <!---sticky-header--->
+jQuery(window).scroll(function() {
+    if (jQuery(this).scrollTop() > 1) {
+        jQuery('header').addClass("sticky");
+    } else {
+        jQuery('header').removeClass("sticky");
+    }
 });
 	
 });
