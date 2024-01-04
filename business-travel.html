@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>TDCLiving-Ca</title>
+<link href="css/tnc-custom.css" rel="stylesheet" type='text/css'>
+<link href="css/custom-responsive.css" rel="stylesheet" type='text/css'>
+<link href="css/owl.carousel.min.css" rel="stylesheet" type='text/css'>
+<script src="//code.jquery.com/jquery-1.10.2.js"></script> 
+<script>  
+$(function(){ 
+  $("#header").load("header.html");  
+  $("#footer").load("footer.html");  
+}); 
+</script>
+</head>
+<body><!---->
+<div id="header"></div>
+<section class="breadcrumbs">
+  <div class="container">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li>Business Travel</li>
+    </ul>
+  </div>
+</section>
+<section class="business-travel">
+  <div class="container">
+    <h2 class="tnc-title">Business travel</h2>
+    <span>Elevate Your Business with Smart Travel Strategies</span> </div>
+  <div class="flex-container canadiens">
+    <div> <img src="images/business-travel-1.jpg"> </div>
+    <div>
+      <ul class="flex-container">
+        <li><img src="images/business-travel-2.jpg"></li>
+        <li><img src="images/business-travel-3.jpg"></li>
+        <li><img src="images/business-travel-4.jpg"></li>
+        <li><img src="images/business-travel-5.jpg"></li>
+      </ul>
+    </div>
+    <button class="open-popup">View all photos</button>
+  </div>
+  <div class="img-gallery-magnific">
+    <div class="gallery-popup">
+      <div class="magnific-img"> <a class="image-popup-vertical-fit" href="images/business-travel-1.jpg" title="9.jpg"> <img src="images/business-travel-1.jpg"> <i class="fa fa-search-plus" aria-hidden="true"></i> </a> </div>
+      <div class="magnific-img"> <a class="image-popup-vertical-fit" href="images/business-travel-2.jpg" title="10.jpg"> <img src="images/business-travel-2.jpg"> <i class="fa fa-search-plus" aria-hidden="true"></i> </a> </div>
+      <div class="magnific-img"> <a class="image-popup-vertical-fit" href="images/business-travel-3.jpg" title="3.jpg"> <img src="images/business-travel-3.jpg"> <i class="fa fa-search-plus" aria-hidden="true"></i> </a> </div>
+      <div class="magnific-img"> <a class="image-popup-vertical-fit" href="images/business-travel-4.jpg" title="4.jpg"> <img src="images/business-travel-4.jpg"> <i class="fa fa-search-plus" aria-hidden="true"></i> </a> </div>
+      <div class="magnific-img"> <a class="image-popup-vertical-fit" href="images/business-travel-5.jpg" title="1.jpg"> <img src="images/business-travel-5.jpg"> <i class="fa fa-search-plus" aria-hidden="true"></i> </a> </div>
+      <div class="magnific-img"> <a class="image-popup-vertical-fit" href="images/business-travel-1.jpg" title="9.jpg"> <img src="images/business-travel-1.jpg"> <i class="fa fa-search-plus" aria-hidden="true"></i> </a> </div>
+      <div class="magnific-img"> <a class="image-popup-vertical-fit" href="images/business-travel-2.jpg" title="10.jpg"> <img src="images/business-travel-2.jpg"> <i class="fa fa-search-plus" aria-hidden="true"></i> </a> </div>
+      <div class="magnific-img"> <a class="image-popup-vertical-fit" href="images/business-travel-3.jpg" title="3.jpg"> <img src="images/business-travel-3.jpg"> <i class="fa fa-search-plus" aria-hidden="true"></i> </a> </div>
+      <div class="magnific-img"> <a class="image-popup-vertical-fit" href="images/business-travel-4.jpg" title="4.jpg"> <img src="images/business-travel-4.jpg"> <i class="fa fa-search-plus" aria-hidden="true"></i> </a> </div>
+    </div>
+    <button class="close-popup"><img src="https://cdn-icons-png.flaticon.com/512/2961/2961937.png" alt="9.jpg" /></button>
+  </div>
+  <div class="container">
+    <p>The downtown area of Montreal is an extraordinary melting pot that will allow you to tick everything off a typical to-do list. This exciting district has colonial architecture for the history buffs, high-end shopping for the fashionistas, superb museums and cutting-edge art galleries for the culture vultures, as well as world-renowned jazz festivals and a wealth of stunning concert halls for the music lovers. As if this wasn’t enough, the area is also home to one of the largest underground complexes in the world with a 33-kilometre arterial network of shops, museums, hotels, metro stations and more. So, make sure you get a good night's sleep before you visit this bustling district because you’re going to need it!</p>
+  </div>
+  <a href="#" class="tnc-btn">Explore Condos</a> </section>
+<section class="cta-2"> <img src="images/Workspaces.jpg">
+  <div class="cta-content">
+    <h2>Worry-Free Workspaces</h2>
+    <a href="#" class="tnc-btn">Explore Condo</a></div>
+</section>
+<div id="footer"></div>
+<script type="application/javascript" src="js/jquery.min.js"></script> 
+<script type="application/javascript" src="js/owl.carousel.min.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script> 
+<script type="application/javascript" src="js/tnc-custom.js"></script> 
+<script>
+	<!---image-popup--->
+  jQuery('.image-popup-vertical-fit').magnificPopup({
+    type: 'image',
+    mainClass: 'mfp-with-zoom',
+    gallery: {
+      enabled: true
+    },
+    zoom: {
+      enabled: true,
+      duration: 300, // duration of the effect, in milliseconds
+      easing: 'ease-in-out', // CSS transition easing function
+      opener: function (openerElement) {
+        return openerElement.is('img') ? openerElement : openerElement.find('img');
+      }
+    }
+  });
+	</script>
+</body>
+</html>
