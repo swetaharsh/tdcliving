@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>TDCLiving-Ca</title>
+<link href="css/tnc-custom.css" rel="stylesheet" type='text/css'>
+<link href="css/custom-responsive.css" rel="stylesheet" type='text/css'>
+<link href="css/owl.carousel.min.css" rel="stylesheet" type='text/css'>
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script>  
+$(function(){ 
+  $("#header-login").load("header-login.html");  
+  $("#footer").load("footer.html");  
+}); 
+</script>
+</head>
+<body>
+<div id="header-login"></div>
+<section class="confirm-pay inner-title">
+  <div class="inner-container">
+    <div class="flex-container pay-back">
+      <h2>Payments</h2>
+    </div>
+    <div class="flex-container">
+      <div class="your-trip-left">
+        <div class="your-payments">
+          <h4>Your payments</h4>
+          <span>Keep track of all your payments and refunds.</span> <a href="#" class="tnc-btn">Manage payments</a></div>
+        <div class="your-payments">
+          <h4>Payment methods</h4>
+          <span>Add a payment method using our secure payment system, then start planning your next trip.</span> <a href="#" class="tnc-btn">Add payment method</a></div>
+        <div class="pay-with your-payments">
+          <h4>Add new card</h4>
+          <div class="box-inner-2">
+            <ul>
+              <li>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected hidden>Credit or debit card</option>
+                  <option value="1">SBI</option>
+                  <option value="2">ICICI</option>
+                  <option value="3">HDFC</option>
+                </select>
+              </li>
+              <li class="card">
+                <input class="form-control" type="email" value="" placeholder="Card Number">
+                <input class="form-control" type="email" value="" placeholder="Expiration">
+                <input class="form-control" type="email" value="" placeholder="CVV">
+              </li>
+              <li>
+                <input class="form-control" type="email" value="" placeholder="Potal code">
+              </li>
+              <li>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected hidden>Country/region</option>
+                  <option value="1">India</option>
+                  <option value="2">USA</option>
+                  <option value="3">Caneda</option>
+                </select>
+              </li>
+              <li>
+                <input class="form-control tnc-btn" type="button" value="Add Card">
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="your-payments">
+          <h2>Payouts</h2>
+          <h4>How you’ll get paid</h4>
+          <span>Add at least one payout method so we know where to send your money.</span> <a href="#" class="tnc-btn">Setup payouts</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+<div id="footer"></div>
+<script type="application/javascript" src="js/jquery.min.js"></script> 
+<script type="application/javascript" src="js/owl.carousel.min.js"></script> 
+<script type="application/javascript" src="js/tnc-custom.js"></script>
+</body>
+</html>
