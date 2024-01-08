@@ -34,6 +34,10 @@ figure {
   width: 1640px;
   margin: 0 auto;
 }
+.inner-container {
+  width: 1100px;
+  margin: 0 auto;
+}
 .flex-container {
   display: flex;
   flex-wrap: wrap;
@@ -109,6 +113,25 @@ nav ul li a:hover {
   background: none;
   border: solid 1px #fff;
   margin-left: 10px;
+  display: flex;
+}
+.header-btn .tnc-btn:last-child img {
+  padding-right: 7px;
+  width: 26px;
+}
+.header-btn .tnc-btn:last-child span {
+  display: inline-block;
+  background: #fff;
+  color: #000;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  font-size: 12px;
+  font-weight: bold;
 }
 .hamburger-btn, .hamburger-close, .footer-menu {
   display: none;
@@ -152,7 +175,7 @@ nav ul li a:hover {
   height: 100%;
   transition: 1s;
 }
-.tour-des-canadiens img:hover, .owl-carousel .owl-item img:hover, .discover-grid img:hover {
+.tour-des-canadiens img:hover, .owl-carousel .owl-item img:hover, .discover-grid img:hover, .parking-spots-drid figure img:hover {
   transform: scale(1.1);
   transition: 1s;
 }
@@ -407,7 +430,16 @@ footer .flex-container {
 .footer-grid h3 {
   font-size: 26px;
   color: #1C54A9;
-  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+}
+.footer-grid h3:after {
+  content: "";
+  background: #000;
+  height: 2px;
+  width: 60px;
+  display: inline-block;
+  margin: 12px 0 14px 0;
 }
 .footer-grid p {
   color: #222222;
@@ -429,6 +461,9 @@ footer .flex-container {
   color: #222222;
   padding: 6px 0;
   font-family: Lora;
+}
+.footer-grid ul li img {
+  width: auto;
 }
 .footer-grid ul li a {
   color: #222222;
@@ -1789,5 +1824,579 @@ button::-moz-focus-inner {
   text-transform: capitalize;
 }
 .amenities-page .discover-grid img.arrow {
-    opacity: 0.2;
+  opacity: 0.2;
+}
+.confirm-pay {
+  padding: 4em 0 5em 0;
+}
+.pay-back {
+  margin-bottom: 2em;
+}
+.pay-back .tnc-btn {
+  margin-left: auto;
+  border-radius: 30px;
+  color: #000;
+  border: solid 1px #333;
+  background: no-repeat;
+  padding: 7px 25px 7px 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.pay-back .tnc-btn:before {
+  content: "";
+  background: url(../images/arrow.svg);
+  display: inline-block;
+  width: 17px;
+  height: 12px;
+  margin-right: 7px;
+  background-size: 100%;
+  transform: rotate(180deg);
+  opacity: 0.3;
+}
+.confirm-pay.inner-title h2 {
+  text-transform: capitalize;
+  font-size: 2.5em;
+  margin-bottom: 0em;
+}
+.confirm-pay .flex-container {
+  gap: 3em;
+  align-items: flex-start;
+}
+.your-trip-left {
+  flex: 0 1 calc((54% / 1) - 1.7em);
+}
+.price-details {
+  flex: 0 1 calc((43% / 1) - 1.7em);
+  margin-left: auto;
+  border: solid 1px #ddd;
+  padding: 2em;
+  border-radius: 10px;
+}
+.confirm-pay h4 {
+  font-size: 1.5em;
+  font-weight: normal;
+  padding-bottom: 10px;
+}
+.your-trip ul {
+  padding-bottom: 2em;
+}
+.your-trip ul li {
+  display: flex;
+  width: 100%;
+  padding: 7px 0;
+  align-items: flex-end;
+}
+.your-trip ul li span {
+  font-size: 1.2em;
+}
+.your-trip ul li a {
+  margin-left: auto;
+  color: #000;
+}
+.your-trip ul li p {
+  color: #717377;
+}
+.your-trip-left img {
+  width: 100%;
+}
+.login-account {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3em 0;
+  border: solid #ddd;
+  border-width: 1px 0px 1px 0px;
+}
+.login-account .tnc-btn {
+  width: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 6px;
+}
+.login-account small {
+  border: solid 1px;
+  margin: 0 20px;
+  border-radius: 50%;
+  width: 90px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pay-with {
+  margin-top: 2em;
+}
+.pay-with ul li {
+  width: 100%;
+  border: solid 1px #ddd;
+  overflow: hidden;
+  padding: 0;
+  margin: 5px 0;
+  display: inline-block;
+  border-radius: 8px;
+}
+.pay-with ul li input, .pay-with ul li select {
+  width: 100%;
+  border: none;
+  padding: 15px 10px;
+  font-size: 16px;
+}
+.form-select option {
+  padding: 20px;
+  height: 30px;
+}
+.pay-with ul li.card {
+  display: flex;
+  flex-wrap: wrap;
+}
+.pay-with ul li.card input:first-child {
+  width: 100%;
+  border-bottom: solid 1px #ddd;
+}
+.pay-with ul li.card input {
+  width: 50%;
+  border-right: solid 1px #ddd;
+}
+.price-details ul li {
+  display: flex;
+  width: 100%;
+  padding: 8px 0;
+  justify-content: space-between;
+}
+.price-details ul li:last-child {
+  padding-top: 2em;
+}
+.price-details figure img {
+  width: 100%;
+}
+.price-details ul li strong {
+  font-weight: normal;
+}
+.box-inner-2 span {
+  padding-bottom: 20px;
+  font-size: 12px;
+  line-height: 22px;
+  display: inline-block;
+}
+.box-inner-2 .tnc-btn {
+  width: 100%;
+  text-align: center;
+  border-radius: 6px;
+  text-transform: uppercase;
+}
+.rental {
+  display: flex;
+  border-bottom: solid 1px #ddd;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+}
+.rental figure {
+  width: 60%;
+  margin-right: 20px;
+  border-radius: 5px;
+  display: flex;
+}
+.rental span {
+  width: 100%;
+  display: inline-block; /* font-size: 16px; */
+}
+.booking-left {
+  flex: 1 1 calc((60% / 1) - 2rem);
+}
+.booking-right {
+  flex: 1 1 calc((40% / 1) - 2rem);
+  text-align: center;
+  padding-top: 6em;
+}
+.booking {
+  padding: 2em;
+  border: solid 1px #D9D9D9;
+  border-radius: 6px;
+}
+.booking img {
+  width: 100%;
+  border-radius: 6px;
+  height: 254px;
+  object-fit: cover;
+  padding: 0;
+}
+.trip-booking h4 {
+  font-weight: 600;
+  color: #717377;
+  margin: 2em 0 1em 0;
+}
+.trip-booking ul li {
+  display: inline-block;
+  width: 100%;
+  padding-bottom: 15px;
+}
+.trip-booking ul li span {
+  min-width: 90px;
+  display: inline-block;
+}
+.booking-right figure {
+  width: 100px;
+  height: 100px;
+  background: #e1ffd7;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 50%;
+  margin: 0 auto 1em auto;
+}
+.booking-right h4 {
+  font-weight: bold;
+}
+.required-trip {
+  border: solid #ddd;
+  border-width: 1px 0px 1px 0px;
+  padding: 1em 0;
+  margin: 2em 0;
+}
+.required-trip ul li {
+  display: flex;
+  align-items: center;
+  border: none;
+  padding: 10px 0;
+}
+.required-trip ul li h5 {
+  font-size: 1.2em;
+  font-weight: 400;
+  padding-bottom: 3px;
+}
+.required-trip ul li p {
+  font-family: 'Jost', sans-serif;
+  color: #717377;
+}
+.required-trip ul li a {
+  margin-left: auto;
+  border: solid 1px;
+  padding: 6px 15px;
+  text-decoration: none;
+  border-radius: 6px;
+  color: #333;
+}
+/**/
+.parking-spots {
+  padding: 4em 0;
+  background: url(../images/Parking-Spots-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.lockers {
+  background: url(../images/Lockers-bg.jpg);
+}
+.parking-spots .flex-container {
+  gap: 2em;
+}
+.parking-spots .tnc-title {
+  font-size: 5.25em;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 40px;
+}
+.parking-spots-drid {
+  flex: 0 1 calc((100% / 4) - 1.5em);
+  background: #fff;
+  padding: 10px;
+}
+.spots {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding: 0 10px
+}
+.parking-spots-drid figure img {
+  display: flex;
+  width: 100%;
+  transition: 1s;
+}
+.spots h4 {
+  font-size: 1.3em;
+  color: #1C54A9;
+  padding: 3px 0;
+}
+.select-btn {
+  background: #5BBF2C !important;
+  color: #fff !important;
+  border: solid 1px #5BBF2C !important;
+}
+.reserve-btn {
+  background: #B01A32 !important;
+  border: solid 1px #B01A32 !important;
+  color: #fff !important;
+}
+.parking-spots-drid .tnc-btn {
+  color: #333;
+  border: solid 1px #333;
+  border-radius: 30px;
+  background: no-repeat;
+}
+.parking span {
+  width: 100%;
+  display: inline-block;
+  padding-top: 2px;
+}
+.parking .your-trip-left strong {
+  font-weight: normal;
+  display: inline-block;
+  padding: 15px 0;
+  border-bottom: solid 1px #ddd;
+  margin-bottom: 20px;
+  width: 100%;
+  color: #717377;
+}
+.parking .your-trip-left p {
+  font-family: 'Jost', sans-serif;
+  color: #717377;
+}
+.parking-right article {
+  flex: 0 1 calc((100% / 2) - 0em);
+  padding: 10px 20px;
+}
+.parking-right article:last-child {
+  border-left: solid 1px #D9D9D9;
+}
+.parking-right .rental {
+  border: solid 1px #D9D9D9;
+  border-radius: 4px;
+  padding: 0;
+}
+.parking-right .rental small {
+  text-transform: uppercase;
+  font-size: 100%;
+  font-weight: 600;
+}
+.parking-right form {
+  margin-bottom: 20px;
+}
+.parking-right form button.tnc-btn {
+  border-radius: 30px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-size: 100%;
+}
+/*sign-up*/
+.sign-up {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+}
+.sign-up .inner-container {
+  width: 1000px;
+}
+.sign-up .logo img {
+  margin: 0 auto 1.5em auto;
+}
+.sign-up .sign-up-grid {
+  border: solid 1px #e4e4e7;
+  padding: 4em 6em;
+  border-radius: 20px;
+  box-shadow: 0 0 10px #00000026;
+}
+.sign-up .tnc-title {
+  text-transform: capitalize;
+  font-weight: normal;
+  font-size: 2.25em;
+  width: 100%;
+}
+.sign-up-grid span {
+  padding-top: 15px;
+  display: inline-block;
+  width: 100%;
+}
+.form-group {
+  gap: 1em;
+  margin-top: 2em;
+}
+.form-group .form-control {
+  flex: 0 1 calc((100% / 2) - 0.5rem);
+}
+.form-group .form-control.checkbox, .form-group .form-control.submit {
+  flex: 0 1 calc((100% / 1) - 0.5rem);
+  margin: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.form-group .form-control input {
+  border: solid 1px #e4e4e7;
+  padding: 15px;
+  border-radius: 8px;
+  width: 100%;
+  height: 65px;
+}
+.form-group .form-control input.tnc-btn {
+  text-transform: uppercase;
+  font-size: 1.2em;
+}
+.form-group .form-control input[type="checkbox"] {
+  width: auto;
+  height: auto;
+}
+.submit .tnc-btn {
+  font-size: 1.2em;
+  width: 100%;
+  text-align: center;
+  border-radius: 8px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-group .form-control {
+  flex: 0 1 calc((100% / 2) - 0.5rem);
+  text-align: center;
+}
+.login .form-group .form-control {
+  flex: 0 1 calc((100% / 1) - 0.5rem);
+}
+.login .inner-container {
+  width: 500px;
+}
+.login .sign-up-grid {
+  padding: 4em 3em;
+  text-align: center;
+}
+.login .form-group .form-control.submit {
+  margin: 0;
+}
+.checkbox label {
+  margin-left: 6px;
+}
+.sign-google .tnc-btn {
+  border: solid 1px #F8FAFC;
+  color: #000;
+  background: #F8FAFC;
+  margin-bottom: 1em;
+}
+.form-control a {
+  text-decoration: none;
+  color: #2563EB;
+}
+.checkbox a {
+  margin-left: auto;
+  color: #333;
+  text-decoration: none;
+}
+.sign-google img {
+  margin-right: 10px;
+}
+/*account*/
+.account {
+  padding: 4em 0;
+}
+.account .flex-container {
+  gap: 2em;
+  margin-top: 2em;
+}
+.account-left {
+  flex: 0 1 calc((75% / 1) - 1.5em);
+}
+.account.inner-title h2 {
+  width: 100%;
+  margin-bottom: 0;
+  text-transform: capitalize;
+  font-size: 2.25em;
+  padding: 10px 0;
+}
+.account .questions-grid {
+  flex: 0 1 calc((100% / 3) - 1.4em);
+  padding: 1em 2em;
+  border-radius: 20px;
+  background: no-repeat;
+  border: solid 1px #e9e9e9;
+  box-shadow: 0 0 22px #00000010;
+}
+.account .questions-grid h3 {
+  padding-bottom: 4px;
+  font-size: 1.1em;
+}
+.security-grid {
+  padding: 1em 0;
+  border-bottom: solid 1px #ddd;
+  width: 100%;
+  display: flex;
+}
+.security-grid aside {
+  padding-right: 2em;
+}
+.security-grid aside strong {
+  width: 100%;
+  display: inline-block;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+.security-grid aside span {
+  display: inline-block;
+  padding: 5px 0;
+}
+.security-grid a {
+  margin-left: auto;
+  color: #333;
+}
+.account span {
+  color: #717377;
+  width: 100%;
+  display: inline-block;
+}
+.login-security.account {
+  padding: 4em 0 10em 0;
+}
+.security-grid ul {
+  display: inline-block;
+  width: 100%;
+  padding-bottom: 30px;
+}
+.security-grid ul li {
+  text-decoration: underline;
+  display: inline-block;
+  width: 100%;
+  padding: 7px 0;
+  font-size: 1.2em;
+}
+.personal-info .form-group .form-control {
+  flex: 1 1 calc((100% / 2) - 2rem);
+  text-align: center;
+}
+.personal-info .form-group .form-control:last-child {
+  flex: 0 1 calc((30% / 1) - 2rem);
+}
+.personal-info .flex-container {
+  gap: 1em;
+  margin: 10px 0 20px 0;
+}
+.your-payments {
+  padding: 30px 0;
+  border-bottom: solid 1px #ddd;
+}
+.your-payments:first-child {
+  padding-top: 0;
+}
+.your-payments:last-child {
+  padding-bottom: 0;
+  border: none;
+}
+.your-payments span {
+  width: 100%;
+  display: inline-block;
+  padding-bottom: 20px;
+}
+.your-payments .tnc-btn {
+  padding: 15px 30px;
+  border-radius: 8px;
+  font-size: 1.2em;
+  height: auto;
+}
+.your-payments h2 {
+  padding-bottom: 30px;
+}
+.pay-with.your-payments {
+  margin: 0;
+}
+.pay-with ul li:last-child {
+  width: auto;
 }
