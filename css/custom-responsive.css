@@ -142,6 +142,7 @@ nav ul li { width: 100%; }
 nav ul li a { text-decoration: none; color: #fff; text-transform: uppercase; padding: 12px 15px; display: inline-block; background: #333; width: 100%; margin: 1px 0; }
 nav ul li a:hover { background: #C61E2D; color: #fff; }
 .sign-up { height: 100%; padding: 3em 0; }
+.filter-form.home{ display: none;}
 }
 @media only screen and (max-width: 767px) {
 html { font-size: 85%; }
