@@ -299,7 +299,7 @@ a.neighbourhood-link { width: 40px !important; height: 40px !important; padding:
 .account .questions-grid { margin: 20px 0; }
 .filter-place .content a {    width: 100%;}
 footer .flex-container {
-    display: flex;
+    display: block;
     flex-wrap: inherit;
     gap: 2em;
 }
