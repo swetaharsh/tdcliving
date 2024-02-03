@@ -42,7 +42,7 @@ figure {
   display: flex;
   flex-wrap: wrap;
 }
-
+a, button, btn{cursor: pointer;}
 .clear {
   clear: both;
 }
@@ -2477,7 +2477,7 @@ button::-moz-focus-inner {
 }
 /*filter design*/
 .filter-modal{display: none;}
-.filter-modal.active-from {
+.filter-modal.activefrom {
   position: fixed;
     z-index: 5;
     top: 50%;
@@ -2563,13 +2563,20 @@ button::-moz-focus-inner {
   }
 .filter-form form{ display: inline-flex;}
 .filter-form button.submit{ background: #B01A32; color: #fff; text-transform: uppercase; border-color: #B01A32; min-width: 180px;}
-.filter-form button.filter {
+.filter-form a.filter {
   display: flex;
   vertical-align: middle;
   align-items: center;
   justify-content: space-between;
+  text-transform: capitalize;
+  cursor: pointer;
 }
-.filter-form button.filter span{ padding: 0 10px;}
+.filter-form a.filter:hover { background: none;}
+
+.filter-form a.filter img {  transform: scale(1.2);}
+.filter-form a.filter span{ padding: 0 10px; text-transform: uppercase;
+  color: #47494B;}
+.filter-form a.filter img{ width: 14px; height: 14px;}
 .filter-form .content h2{ font-weight: 500; margin:0.5em; font-size: 2em;}
 .align-items-end {
   display: flex;
