@@ -1,3 +1,6 @@
+@media (max-width: 1300px){
+.videos-min .container{ width: 90%;}
+}
 @media (min-width: 1366px) and (max-width: 1700px) {
 html { font-size: 85%; }
 .container,
@@ -45,7 +48,7 @@ a.neighbourhood-link { width: 40px !important; height: 40px !important; padding:
 .canadiens-content ul li { flex: 1 1 calc((100% / 2) - 2rem); }
 .apartments .canadiens-btn { display: inline-block; }
 .apartments .canadiens-btn div { margin-left: 0; border-right: none; padding-right: 0; padding-bottom: 30px; }
-.parking-spots .tnc-title { font-size: 4em; }
+.parking-spots .tdc-title { font-size: 4em; }
 .parking-spots-drid { flex: 0 1 calc((100% / 3) - 1.5em); }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -55,7 +58,7 @@ html { font-size: 85%; }
 .inner-container,
 .sign-up .inner-container { width: 90%; }
 .logo img { width: 170px; }
-.header-btn .tnc-btn:last-child { margin: 0 13px; }
+.header-btn .tdc-btn:last-child { margin: 0 13px; }
 .amenities .owl-stage,
 .step-away .owl-stage { right: 0; }
 .footer-grid { flex: 1 1 calc((100% / 2) - 5em) !important; margin: 1em; }
@@ -66,8 +69,8 @@ html { font-size: 85%; }
 .canadiens-content,
 .canadiens-btn { flex: 1 1 calc((100% / 1) - 2rem); text-align: left; }
 .largest-right { margin-top: 3em; }
-.canadiens-btn .tnc-btn { margin-top: 1em; }
-.amenities .tnc-btn { margin-top: 0em; }
+.canadiens-btn .tdc-btn { margin-top: 1em; }
+.amenities .tdc-btn { margin-top: 0em; }
 .hero-content h2 { font-size: 3.5em; }
 .hero-content h3 { font-size: 2.5em; }
 .cta h3 { font-size: 3.188em; }
@@ -95,7 +98,7 @@ html { font-size: 85%; }
 a.neighbourhood-link { width: 40px !important; height: 40px !important; padding: 12px; }
 .neighbourhood.transportation .discover-grid { width: 49%; }
 footer .flex-container { display: flex; flex-wrap: wrap; }
-.tnc-title { font-size: 2em; }
+.tdc-title { font-size: 2em; }
 .old-montreal p { width: 90%; line-height: 26px; }
 .old-montreal-min p { width: 80%; text-align: center; }
 .bars { margin-top: 0; }
@@ -116,13 +119,14 @@ footer .flex-container { display: flex; flex-wrap: wrap; }
 .amenities-page { padding: 0 0 4em 0; }
 .amenities-page .discover-grid { flex: 0 1 calc((100% / 2) - 1.9em) !important; }
 .login-account small { display: none; }
-.login-account .tnc-btn { width: auto; }
+.login-account .tdc-btn { width: auto; }
 .confirm-pay .flex-container { gap: 1em; }
 .parking-spots-drid { flex: 0 1 calc((100% / 2) - 1.5em); background: #fff; padding: 10px; }
 .account .questions-grid { flex: 0 1 calc((100% / 2) - 1.4em); }
-.your-trip-left {
-    flex: 0 1 calc((100% / 1) - 1.7em);
+.your-trip-left {    flex: 0 1 calc((100% / 1) - 1.7em);}
 }
+@media only screen and (min-width: 992px) {
+    .order-first{ order:-1}
 }
 @media only screen and (max-width: 992px) {
 header { justify-content: start; }
@@ -151,10 +155,10 @@ p { line-height: 26px !important; }
 footer .flex-container { display: block; }
 header.flex-container { display: flex; }
 .logo img { display: flex; width: 130px; }
-.tnc-btn,
-.canadiens-btn .tnc-btn,
-.largest-left .tnc-btn { padding: 8px 10px; height: 40px; }
-.header-btn .tnc-btn:last-child { margin: 0 7px; }
+.tdc-btn,
+.canadiens-btn .tdc-btn,
+.largest-left .tdc-btn { padding: 8px 10px; height: 40px; }
+.header-btn .tdc-btn:last-child { margin: 0 7px; }
 .book-stay { position: fixed; top: 50%; right: -31px; z-index: 9; transform: rotate(90deg); }
 .banner .owl-carousel .owl-item img { height: 280px; object-fit: cover; }
 .hero-content h2 { font-size: 2.5em; line-height: 1; }
@@ -176,8 +180,8 @@ header.flex-container { display: flex; }
 .features,
 .parking-spots,
 .login-security { padding: 3em 0; }
-.tnc-title,
-.sign-up .tnc-title { font-size: 2em; }
+.tdc-title,
+.sign-up .tdc-title { font-size: 2em; }
 .step-away h4 { font-size: 1.3em; }
 .amenities .owl-stage,
 .step-away .owl-stage { right: 0; }
@@ -198,6 +202,15 @@ header.flex-container { display: flex; }
 .footer-menu { display: block; background: #b01a32; padding: 10px 10px; text-align: center; color: #fff; font-size: 20px; border-radius: 30px; margin-top: 20px; cursor: pointer; }
 .footer-grid.main { display: block; }
 .inner-banner img { height: 200px; object-fit: cover; }
+.filter-popup img{ height: auto;}
+.filter-form select{ display: none;}
+.filter-modal{ width: 90%;}
+fieldset.extras label {
+    width: 100%;
+    display: inline-flex;
+    align-items: stretch;
+    justify-content: flex-start;
+}
 .discover { padding-top: 3em; }
 .discover-grid { margin: 0 0 2em 0; }
 .inner-hero-content h2 { font-size: 1.7em; line-height: 1; padding-bottom: 10px; }
@@ -205,16 +218,12 @@ header.flex-container { display: flex; }
 .nearby-colleges .inner-title h2 { margin-bottom: 15px; }
 .inner-hero-content h3 { width: 90%; margin: 0 auto; }
 .neighbourhood-content p { width: 100%; }
- .nearby-renting .discover-grid, {
- width: 100%;
-}
+ .nearby-renting .discover-grid, { width: 100%;}
 .neighbourhood.inner-title h2 { margin-bottom: 14px; font-size: 1.75em; }
 .neighbourhood.transportation .discover-grid,
 .neighbourhood .discover-grid { width: 100%; margin-bottom: 10px; }
-.owl-prev,
-.owl-next { width: 40px; height: 40px; }
-.arrow-left,
-.arrow-right { width: 10px; height: 10px; }
+.owl-prev, .owl-next { width: 40px; height: 40px; }
+.arrow-left, .arrow-right { width: 10px; height: 10px; }
 a.neighbourhood-link { width: 40px !important; height: 40px !important; padding: 12px; }
 .inner-hero-content { width: 90%; }
 .old-montreal-min p { width: 100%; }
@@ -247,16 +256,16 @@ a.neighbourhood-link { width: 40px !important; height: 40px !important; padding:
 .cta-2 img { height: 320px; }
 .cta-2 h2 { font-size: 2.2em; line-height: 36px; }
 .business-travel p { width: 100%; }
-.business-travel .tnc-title { width: 100%; padding-bottom: 20px; font-size: 3.25em; }
+.business-travel .tdc-title { width: 100%; padding-bottom: 20px; font-size: 3.25em; }
 .amenities-min .train-grid h2 { padding: 15px 0 5px 0; }
 .largest-left img { width: 100%; }
-.largest-left .tnc-title { font-size: 2.5em; }
+.largest-left .tdc-title { font-size: 2.5em; }
 .owl-carousel .owl-item img,
 .discover-grid img { height: 250px !important; object-fit: cover; }
 .canadiens-content { padding-bottom: 0em; }
 .canadiens ul { flex-wrap: wrap; gap: 0em; }
 .canadiens { gap: 0em; margin-top: 2em; }
-.amenities .tnc-title { margin-bottom: 0; }
+.amenities .tdc-title { margin-bottom: 0; }
 #amenities { margin-top: 2em; }
 .amenities-min { padding: 2em 0; }
 .faq h2 { margin-bottom: 10px; }
@@ -279,12 +288,13 @@ a.neighbourhood-link { width: 40px !important; height: 40px !important; padding:
 .canadiens-content ul li { width: 100%; margin-bottom: -1px; }
 .pay-back.flex-container { display: flex; }
 .login-account small { display: none; }
-.login-account .tnc-btn { margin: 0 2px; }
+.login-account .tdc-btn { margin: 0 2px; }
 .parking-spots-drid { margin-bottom: 20px; }
-.parking-spots .tnc-title { font-size: 3em; }
-.parking-spots .tnc-title { padding-bottom: 25px; }
+.parking-spots .tdc-title { font-size: 3em; }
+.parking-spots .tdc-title { padding-bottom: 25px; }
 .sign-up { height: 100%; padding: 3em 0; }
 .sign-up .sign-up-grid { padding: 2em 1em; box-shadow: none; text-align: center; }
 .form-group .form-control { margin: 12px 0; }
 .account .questions-grid { margin: 20px 0; }
+.filter-place .content a {    width: 100%;}
 }
