@@ -238,10 +238,10 @@ jQuery(document).ready(function () {
     jQuery("body").removeClass("intro");
   });
   jQuery(".filter-popup").click(function () {
-    jQuery(".filter-modal").addClass("active-from");
+    jQuery(".filter-modal").addClass("activefrom");
   });
   jQuery(".close-btn").click(function () {
-    jQuery(".filter-modal").removeClass("active-from");
+    jQuery(".filter-modal").removeClass("activefrom");
   });
  
 });
