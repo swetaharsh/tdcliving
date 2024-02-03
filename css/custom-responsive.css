@@ -153,7 +153,7 @@ html { font-size: 85%; }
 .login-security .inner-container { width: 90%; }
 p { line-height: 26px !important; }
 .flex-container,
-footer .flex-container { display: block; }
+footer .flex-container { display: grid; }
 header.flex-container { display: flex; }
 .logo img { display: flex; width: 130px; }
 .tdc-btn,
@@ -182,7 +182,7 @@ header.flex-container { display: flex; }
 .parking-spots,
 .login-security { padding: 3em 0; }
 .tdc-title,
-.sign-up .tdc-title { font-size: 2em; }
+.sign-up .tdc-title { font-size: 1.8em; }
 .step-away h4 { font-size: 1.3em; }
 .amenities .owl-stage,
 .step-away .owl-stage { right: 0; }
